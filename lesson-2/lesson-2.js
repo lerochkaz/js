@@ -38,17 +38,17 @@ console.log( true===true ? '+++' : '---');
 // В переменной day лежит какое-то число из интервала от 1 до 31. 
 // Определите в какую декаду месяца попадает это число (в первую, вторую или третью).
 
-// let random = (min, max) => {
-//     return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
+let random = (min, max) => {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
 
-// let getResultDecade=()=>{
-//     const day = random(1,31);
-//     console.log(`Сгенерировано число ${day}`);
-//     return 0<day&&day<=10 ? 'Первая декада' : 10<day&&day<=20 ? 'Вторая декада' : 20<day&&day<=31 ? 'Третья декада' : 'Ошибка!';
-// }
+let getResultDecade=()=>{
+    const day = random(1,31);
+    console.log(`Сгенерировано число ${day}`);
+    return 0<day&&day<=10 ? 'Первая декада' : 10<day&&day<=20 ? 'Вторая декада' : 20<day&&day<=31 ? 'Третья декада' : 'Ошибка!';
+}
 
-// console.log(getResultDecade());
+console.log(getResultDecade());
 
 
 // Задание 4
