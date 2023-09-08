@@ -107,9 +107,9 @@ console.log(programGetMaxNumber());
 
 let arrayTwoElement=(array)=>{
     let newArray = new Array();
-    // if(array.lenght>0) {  // Почему данная проверка не работает?
+    if(array.length>0) { 
         newArray.push(+array[0], +array[1]);
-    // }
+    }
     return newArray;
 }
 
