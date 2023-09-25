@@ -17,7 +17,7 @@ class Book {
         this.author = author;
         this.pages = pages;
     }
-    displayInfo(){
+    displayInfo() {
         console.log(`Title: ${this.title}, Author: ${this.author}, Pages: ${this.pages}`)
     }
 }
@@ -45,7 +45,7 @@ class Student {
         this.age = age;
         this.grade = grade;
     }
-    displayInfo(){
+    displayInfo() {
         console.log(`Name: ${this.name}, Age: ${this.age}, Grade: ${this.grade}`)
     }
 }

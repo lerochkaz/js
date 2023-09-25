@@ -2,7 +2,7 @@
 // найти минимальное число в массиве, решение задание должно состоять из одной
 // строки кода.
 
-function getMinNumberInArray(array){
+function getMinNumberInArray(array) {
     return Math.min(...array);
 }
 
@@ -16,18 +16,17 @@ console.log(getMinNumberInArray(arr));
 // на 1. Значение счетчика должно быть доступно только через методы объекта,
 // а не напрямую.
 
-function calculator(number){
-    let counter=number;
+function calculator(number) {
+    let counter = number;
     return {
-        increment(){
-            return ++counter;
-        },
-        decrement(){
-            return --counter;
-        }
-    }
+        getCounter: () => counter,
+        increment: () => counter++,
+        decrement: () => counter--,
+    };
 }
 
 let calc=calculator(0);
-console.log(calc.increment());
-console.log(calc.decrement());
+calc.increment();
+calc.increment();
+calc.decrement();
+console.log(calc.getCounter());
